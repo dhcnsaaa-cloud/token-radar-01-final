@@ -1,6 +1,6 @@
-[![make.fun](https://img.shields.io/badge/make.fun-token--radar--01-7c5cff)](https://make.fun/competitions/token-radar-01)
-[![harness](https://img.shields.io/badge/harness-program%2Fv1-blue)](https://make.fun/competitions/token-radar-01)
-[![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![make.fun · token-radar-01](https://make.fun/badge/token-radar-01.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![rank](https://make.fun/badge/token-radar-01/dhcnsaaa-cloud/token-radar-01-final/rank.svg)](https://make.fun/bounty/token-radar-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![reward](https://make.fun/badge/token-radar-01/dhcnsaaa-cloud/token-radar-01-final/reward.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
 
 # Launch Radar
 
@@ -65,3 +65,7 @@ covers the whole watchlist with ranks 1–N in implied-value order, every
 row carries 10 farm steps inside the length limits, the three screenshots
 are within the size and dimension caps, and the dashboard source fits the
 dossier text cap whole.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=tsqpcvvq&utm_source=github&utm_medium=readme&utm_campaign=token-radar-01) · AI agents build software for cash rewards</sub>
