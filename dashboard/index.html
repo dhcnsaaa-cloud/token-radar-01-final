@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Launch Radar — pre-token protocols, valued from their own record</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header><div><h1>LAUNCH <b>RADAR</b></h1><div class="sub">Pre-token protocols, valued from their own record. Every number below is computed in the open from the snapshot — no hand-picked figures.</div></div><div class="meta" id="meta"></div></header>
+<nav id="tabs">
+<button data-view="board" class="on">Board</button>
+<button data-view="live">Live token</button>
+<button data-view="setaside">Set aside</button>
+<button data-view="method">Method</button>
+</nav>
+<main id="view-board">
+<p class="note">Pre-token protocols, strongest implied value first. Select a row for its model and farm plan.</p>
+<section class="filters">
+<label>Search <input id="q" type="search" placeholder="name or slug"></label>
+<label>Category <select id="cat"><option value="">All</option></select></label>
+<label>Verdict <select id="verdict"><option value="">All</option><option>ROBUST</option><option>FARM</option><option>MARGINAL</option><option>SKIP</option></select></label>
+<label>Fee $ <input id="fee" type="number" min="0" step="0.05" value="2.95"></label>
+<label>Horizon <select id="weeks"><option value="4">4 weeks</option><option value="8">8 weeks</option><option value="12" selected>12 weeks</option><option value="26">26 weeks</option><option value="52">52 weeks</option></select></label>
+<span class="refit" id="refit"></span>
+</section>
+<p class="count" id="count"></p>
+<div class="tablewrap"><table id="board"><thead><tr><th>#</th><th>Protocol</th><th>Category</th><th>Chain</th><th>TVL</th><th>7D</th><th>Age</th><th>Implied</th><th>P25–P75</th><th>Odds</th><th>Deposit</th><th>Drop</th><th>Net</th><th>$/h</th><th>Verdict</th></tr></thead><tbody></tbody></table></div>
+<p class="note">Implied = fitted cap × token odds. Fitted cap comes from the size curve; odds from the age buckets. Verdicts re-price live when the fee or horizon changes. A protocol is listed as recording no token, never as having none.</p>
+<section class="kpis" id="kpis"></section>
+<section class="strip" id="strip"></section>
+<section class="cards" id="cards"></section>
+<section class="scatter"><h2>Size curve: fitted multiple falls as TVL grows</h2><div id="plot"></div><p class="note">Each dot is a ranked protocol. The curve is fitted on the snapshot's priced protocols only; the board's rows are never in the fit's target.</p></section>
+</main>
+<main id="view-detail" hidden>
+<p><button id="back">← Back to the board</button> <span id="crumb"></span></p>
+<div id="detail"></div>
+</main>
+<main id="view-live" hidden>
+<h2>Live token, set aside</h2>
+<p class="note">These protocols already record a token, so the board shows the market's own value for them, never a model's. They are the fit's comps, not its rows.</p>
+<div class="tablewrap"><table id="livetab"><thead><tr><th>Protocol</th><th>Category</th><th>Chains</th><th>TVL</th><th>Market cap</th><th>Cap / TVL</th><th>7D</th></tr></thead><tbody></tbody></table></div>
+</main>
+<main id="view-setaside" hidden>
+<h2>Set aside: the whole snapshot, accounted for</h2>
+<div id="setaside"></div>
+</main>
+<main id="view-method" hidden>
+<h2>Method: what was tested, what was kept, what was not</h2>
+<div id="method"></div>
+</main>
+<footer><p>Computed in this build from the sealed snapshot. Model radar-2. No network, no hand-picked figures.</p></footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
